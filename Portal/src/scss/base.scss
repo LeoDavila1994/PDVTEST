@@ -1,0 +1,76 @@
+html {
+  @apply font-body;
+}
+
+.main-body {
+  @apply relative flex w-full min-h-screen bg-background text-normal text-sm;
+
+  &_overlay-show {
+    @apply overflow-hidden;
+  }
+}
+
+h1,
+.h1 {
+  @apply font-heading text-3xl leading-10;
+}
+
+@screen md {
+  h1,
+  .h1 {
+    @apply text-4xl;
+  }
+}
+
+h2,
+.h2 {
+  @apply font-heading font-bold text-2xl;
+}
+
+h3,
+.h3 {
+  @apply font-heading font-bold text-xl;
+}
+
+h4,
+.h4 {
+  @apply font-heading font-bold text-givvy_blue;
+}
+
+h5,
+.h5 {
+  @apply font-heading font-bold text-base;
+}
+
+h6,
+.h6 {
+  @apply font-heading font-bold text-xs;
+}
+
+a:any-link {
+  @apply text-givvy_blue;
+
+  &:hover {
+    @apply text-givvy_blue_strong;
+  }
+}
+
+small {
+  @apply text-xs text-muted;
+}
+
+input {
+  @apply min-w-0;
+}
+
+a,
+button {
+  &:focus {
+    @apply outline-none;
+  }
+}
+
+hr {
+  @apply border-divider;
+}
+
